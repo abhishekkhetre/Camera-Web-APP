@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(143, 104, 145);
+
+}
+#div1{
+    border: 20px;
+    border-color: black;
+}
+#head{
+    text-align: center;
+    color: white;
+}
+
+.canvaa{
+    height: fit-content;
+    max-width: fit-content ;
+    display: inline;
+    margin: 1rem;
+}
+#camera--view{
+    margin-left: 1.6rem;
+    /* height: 100%;
+    width: 5%; */
+    object-fit: cover;
+}
+#camera--sensor{
+
+    object-fit: cover;
+}
+
+/* to mirror the image  */
+#camera--view, #camera--sensor,#camera--sensor2, #camera--output{
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+#camera--trigger{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 10px;
+    left: calc(50% - 100px);
+}
+#camera--trigger:hover{
+    background-color: rgb(65, 3, 3);
+    cursor: pointer;
+}
+
+.taken{
+    height: 100px!important;
+    width: 100px!important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 20px;
+    right: 20px;
+}
+
